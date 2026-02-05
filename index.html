@@ -2,63 +2,115 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>For You 🌸</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Romantic Rizz — A Love Letter in Motion</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Great+Vibes&family=Manrope:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <div class="bg-gradient"></div>
+  <div class="noise"></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero-text">
-      <h1>Hey You 🌷</h1>
-      <p class="quote">Some smiles don’t just make your day… they become your favorite habit.</p>
+  <nav class="site-nav">
+    <div class="site-nav__logo">Romantic Rizz</div>
+    <div class="site-nav__links">
+      <a href="index.html">Home</a>
+      <a href="moments.html">Moments</a>
+      <a href="gestures.html">Gestures</a>
+      <a href="gallery.html">Gallery</a>
+    </div>
+  </nav>
+
+  <header class="hero" id="hero">
+    <div class="hero__content">
+      <div class="hero__intro">A soft, cinematic love letter</div>
+      <h1 class="hero__title">For the one who feels like destiny.</h1>
+      <p class="hero__quote" id="heroQuote">
+        <span>Some people don’t enter your life…</span>
+        <span>they quietly become it.</span>
+      </p>
+      <div class="hero__cta">Scroll to feel the story</div>
+    </div>
+    <div class="hero__visual">
+      <div class="photo-frame heartbeat">
+        <img src="assets/photo-hero.jpg" alt="Her portrait" class="hero__photo" />
+        <div class="photo-glow"></div>
+      </div>
+      <div class="floating-hearts" aria-hidden="true"></div>
+    </div>
+  </header>
+
+  <section class="section rizz" id="rizz">
+    <div class="section__header">
+      <h2>Cute Rizz 😏</h2>
+      <p>Playful, bold, and a little too honest.</p>
+    </div>
+    <div class="rizz__bubbles">
+      <div class="bubble">Are you Wi‑Fi? Because my heart auto‑connects to you.</div>
+      <div class="bubble">I tried to focus today… then you existed.</div>
+      <div class="bubble">If I had a playlist, you’d be every track.</div>
+      <div class="bubble">You’re the kind of cute that reboots my soul.</div>
     </div>
   </section>
 
-  <!-- RIZZ -->
-  <section class="rizz">
-    <h2>Lowkey Facts 😌</h2>
-    <div class="rizz-cards">
-      <div class="card">I tried focusing… then you smiled.</div>
-      <div class="card">You + flowers = unfair competition.</div>
-      <div class="card">Not magic. Just you.</div>
+  <section class="section poetry" id="poetry">
+    <div class="section__header">
+      <h2>Poetry & Feelings 💌</h2>
+      <p>Soft instrumental moods and words that breathe.</p>
+    </div>
+    <div class="poetry__content">
+      <div class="poem-line">You are not a chapter,</div>
+      <div class="poem-line">you’re the whole story I keep rereading.</div>
+      <div class="poem-line">If my heart had a compass,</div>
+      <div class="poem-line">every direction would be you.</div>
+    </div>
+    <audio id="bgAudio" class="bg-audio" controls loop>
+      <source src="assets/soft-instrumental.mp3" type="audio/mpeg" />
+    </audio>
+  </section>
+
+  <section class="section memories" id="memories">
+    <div class="section__header">
+      <h2>Memory / Admiration 🌷</h2>
+      <p>Little truths wrapped in glass.</p>
+    </div>
+    <div class="memory-grid">
+      <article class="memory-card">
+        <h3>Your smile should come with a warning</h3>
+        <p>Dangerously addictive.</p>
+      </article>
+      <article class="memory-card">
+        <h3>You don’t try to be special…</h3>
+        <p>You just are.</p>
+      </article>
+      <article class="memory-card">
+        <h3>Every room feels softer</h3>
+        <p>The moment you enter it.</p>
+      </article>
+      <article class="memory-card">
+        <h3>If elegance had a voice</h3>
+        <p>It would sound like your laugh.</p>
+      </article>
     </div>
   </section>
 
-  <!-- POETRY -->
-  <section class="poetry">
-    <p>
-      You don’t enter a room,<br>
-      you quietly improve it.<br><br>
-      And somehow,<br>
-      everything feels warmer<br>
-      when you’re around.
-    </p>
-  </section>
-
-  <!-- GALLERY -->
-  <section class="gallery">
-    <h2>Moments 🌸</h2>
-    <div class="grid">
-      <img src="images/img1.jpg">
-      <img src="images/img2.jpg">
-      <img src="images/img3.jpg">
-      <img src="images/img4.jpg">
-      <img src="images/img5.jpg">
-      <img src="images/img6.jpg">
-      <img src="images/img7.jpg">
-      <img src="images/img8.jpg">
+  <section class="section finale" id="finale">
+    <div class="finale__backdrop"></div>
+    <div class="finale__content">
+      <div class="finale__photo heartbeat">
+        <img src="assets/photo-finale.jpg" alt="Her best photo" />
+      </div>
+      <h2>If beauty had a feeling, it would feel like you.</h2>
+      <p class="finale__note">Make the website feel emotionally alive, as if every animation responds to love itself.</p>
     </div>
+    <div class="glow-particles" aria-hidden="true"></div>
   </section>
 
-  <!-- FINAL -->
-  <section class="final">
-    <h2>If beauty had a feeling…</h2>
-    <p>It would feel exactly like you 💖</p>
-  </section>
-
+  <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+  <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
