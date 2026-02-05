@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(#fff, #fdeff4);
+  color: #333;
+  scroll-behavior: smooth;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: radial-gradient(circle, #ffe4ec, #fff);
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.quote {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.3rem;
+  opacity: 0;
+  animation: fadeIn 2s forwards;
+}
+
+/* RIZZ */
+.rizz {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.rizz-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background: rgba(255,255,255,0.6);
+  padding: 20px 30px;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* POETRY */
+.poetry {
+  padding: 100px 20px;
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+/* GALLERY */
+.gallery {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.grid {
+  columns: 3 200px;
+  gap: 15px;
+}
+
+.grid img {
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  transition: transform 0.4s;
+}
+
+.grid img:hover {
+  transform: scale(1.05);
+}
+
+/* FINAL */
+.final {
+  height: 80vh;
+  background: linear-gradient(#ffd6e8, #fff);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+
+/* MOBILE */
+@media(max-width:768px) {
+  .hero h1 { font-size: 2.2rem; }
+  .grid { columns: 1; }
+}
